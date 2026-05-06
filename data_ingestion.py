@@ -1,14 +1,11 @@
-# Cell 1
 import lightkurve as lk
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-# Set plotting style for clear visualization
 plt.style.use('default')
 
-# Cell 2
-# Literature values for the 3 target systems [cite: 8, 9]
+# Literature values for the 3 target systems
 # Note: For your final Phase 5 validation, you may want to cross-reference 
 # these exact T0 and Period values with the NASA Exoplanet Archive[cite: 80].
 
@@ -16,20 +13,20 @@ target_params = {
     "Kepler-7": {
         "search_name": "Kepler-7",
         "mission": "Kepler",
-        "period": 4.8854892, 
-        "t0": 133.8166 # BKJD
+        "period": 4.885488953, 
+        "t0": 134.2768785 # BKJD
     },
     "Kepler-10": {
         "search_name": "Kepler-10",
         "mission": "Kepler",
         "period": 0.837491, 
-        "t0": 2454964.576 - 2454833.0 # Converted roughly to BKJD
+        "t0": 131.5832 # BKJD
     },
     "WASP-39": {
         "search_name": "WASP-39",
         "mission": "TESS",
-        "period": 4.0552941, 
-        "t0": 2458269.837 - 2457000.0 # Converted roughly to BTJD
+        "period": 4.05527892, 
+        "t0": 1269.837 # Converted roughly to BTJD
     }
 }
 
